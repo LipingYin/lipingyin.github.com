@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://LipingYin.github.io/sitemap.xml 
