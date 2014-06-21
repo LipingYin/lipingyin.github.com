@@ -69,7 +69,6 @@ github_show_profile_link: true
 github_skip_forks: true
 
 
-
 # Google +1
 google_plus_one: false
 google_plus_one_size: medium
@@ -94,7 +93,6 @@ disqus_show_comment_count: false
 # Google Analytics
 google_analytics_tracking_id: UA-43063850-1
 
-
 # duoshuo comments
 duoshuo_comments: true
 duoshuo_short_name: qxxqxx
@@ -102,8 +100,5 @@ duoshuo_short_name: qxxqxx
 # Post License 
 post_license: true
 
-instagram_user: qxxqxx
-
-weibo_user: a11en # 微博数字 ID 或域名 ID
-dribbble_user: allenhsu
+weibo_user: smallyin00 # 微博数字 ID 或域名 ID
 weibo_share: true # 是否开启微博分享按钮
