@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Liping Yin]]></title>
+  <link href="http://LipingYin.github.io/atom.xml" rel="self"/>
+  <link href="http://LipingYin.github.io/"/>
+  <updated>2014-06-21T23:08:27+08:00</updated>
+  <id>http://LipingYin.github.io/</id>
+  <author>
+    <name><![CDATA[LipingYin]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+</feed>
