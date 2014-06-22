@@ -10,7 +10,6 @@
 - 将博客部署到GitHub上
 - 配置博客
 - 发表博客
-- 更多
 
 
 ####参考
@@ -50,6 +49,10 @@ weibo_user: smallyin00
       border: 1px solid darken(#e32529, 10%);
   }
 }
+</code></pre>
+- 最后加代码到octopress/source/_includes/header.html文件中 
+<pre><code>
+< a class="weibo" href="http://www.weibo.com/smallyin00" title="Weibo">Weibo</a>
 </code></pre>
 
 
