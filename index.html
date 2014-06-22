@@ -9,8 +9,7 @@
 	<meta name="author" content="LipingYin">
 
 	
-	<meta name="description" content=" Blog Archives
-">
+	<meta name="description" content="Xiang Xie Dai Ma [?] Yang De Xie Bo Ke 没事搭个博客玩玩儿 @(示例笔记本)[github|Octopress] 继挺进大西北、毕业发生的一系列事儿、公司持续性加班之后,发现本月我过的那叫一个风风风火火火啊,玩的时候潇洒的赛神仙,忙的也累成样狗. &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -102,6 +101,113 @@
 			<div class="mid-col-container">
 				<div id="content" class="inner">
 <div itemscope itemtype="http://schema.org/Blog">
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-06-22T00:00:00+08:00" data-updated="true" itemprop="datePublished"></time></div>
+		<div class="tags">
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/xiang-xie-dai-ma-%5B%3F%5D-yang-de-xie-bo-ke/" itemprop="url">Xiang Xie Dai Ma [?] Yang De Xie Bo Ke</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<h1>没事搭个博客玩玩儿</h1>
+
+<p>@(示例笔记本)[github|Octopress]</p>
+
+<p><img src="/Users/yinliping/octopress/source/_posts/xibei.jpg" alt="Alt text" />
+继挺进大西北、毕业发生的一系列事儿、公司持续性加班之后,发现本月我过的那叫一个风风风火火火啊,玩的时候潇洒的赛神仙,忙的也累成样狗.还得完成我学生到社会人士的角色转换。好好一个周末又下了个暴雨,我环不了世界,也到不了南极,那就应该放放松松约个会,看个电影,吃个饭,干些正儿八经儿女孩子该干的事儿。考虑到我的男人在被其他女人调教,我也懒得去调教其他男人,就免了吧。所以我退而求其次到楼下小店储备点干粮准备继续搞我之前搞了一半的 Blog.现在以你所见,就这么搭建成功了。</p>
+
+<h4>搭建步骤</h4>
+
+<ul>
+<li>搭建本地环境(安装Git、安装Ruby、安装DevKit)</li>
+<li>配置环境(克隆Octopress、安装Octopress依赖项)</li>
+<li>将博客部署到GitHub上</li>
+<li>配置博客</li>
+<li>发表博客</li>
+<li>更多</li>
+</ul>
+
+
+<h4>参考</h4>
+
+<ul>
+<li><a href="http://blog.devtang.com/blog/2012/02/10/setup-blog-based-on-github/">http://blog.devtang.com/blog/2012/02/10/setup-blog-based-on-github/</a></li>
+<li><a href="http://blog.csdn.net/jackystudio/article/details/16117585">http://blog.csdn.net/jackystudio/article/details/16117585</a></li>
+</ul>
+
+
+<h4>主题</h4>
+
+<p>这是我使用的主题:</p>
+
+
+
+
+<pre><code>
+$ git clone git@github.com:shashankmehta/greyshade.git .themes/greyshade
+$ echo "\$greyshade: color;" >> sass/custom/_colors.scss //Substitue 'color' with your highlight color
+$ rake "install[greyshade]"
+$ rake generate
+
+</code></pre>
+
+
+<p>使用完以后别忘记generate/deploy</p>
+
+<h4>新浪微博</h4>
+
+<p>发现 sina weibo 的添加不只是更改_config.yml</p>
+
+<ul>
+<li>首先在_config.yml 加上</li>
+</ul>
+
+
+<pre><code>
+weibo_user: smallyin00
+</code></pre>
+
+
+<ul>
+<li>其次添加“weibo.png” 到 “octopress/source/images/social”</li>
+<li>然后加代码到“octopress/sass/parts/_header.scss文件中</li>
+</ul>
+
+
+<pre><code>
+&.weibo{
+  background: image-url('social/weibo.png') center no-repeat #e32529;
+  border: 1px solid #e32529;
+  &:hover{
+      border: 1px solid darken(#e32529, 10%);
+  }
+}
+</code></pre>
+
+
+
+
+		
+		
+	</div>
+
+</article>
 
 </div>
 <nav id="pagenavi">
