@@ -8,8 +8,8 @@ single: true
 	{% include post/sharing.html %}
 {% endunless %}
 {% if site.duoshuo and page.comments == true %}
-<section>
-    <h1>Comments</h1>
-    <div id="comments" aria-live="polite">{% include post/duoshuo.html %}</div>
+<section id="comment">
+    <h1 class="title">Comments</h1>
+    <div id="comments" aria-live="polite">{% include post/doushuo.html %}</div>
 </section>
 {% endif %}
