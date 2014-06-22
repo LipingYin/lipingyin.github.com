@@ -1,0 +1,56 @@
+# 没事搭个博客玩玩儿
+
+@(示例笔记本)[github|Octopress]
+
+![Alt text](/Users/yinliping/octopress/source/_posts/xibei.jpg)
+继挺进大西北、毕业发生的一系列事儿、公司持续性加班之后,发现本月我过的那叫一个风风风火火火啊,玩的时候潇洒的赛神仙,忙的也累成样狗.还得完成我学生到社会人士的角色转换。好好一个周末又下了个暴雨,我环不了世界,也到不了南极,那就应该放放松松约个会,看个电影,吃个饭,干些正儿八经儿女孩子该干的事儿。考虑到我的男人在被其他女人调教,我也懒得去调教其他男人,就免了吧。所以我退而求其次到楼下小店储备点干粮准备继续搞我之前搞了一半的 Blog.现在以你所见,就这么搭建成功了。
+
+####搭建步骤
+- 搭建本地环境(安装Git、安装Ruby、安装DevKit)
+- 配置环境(克隆Octopress、安装Octopress依赖项)
+- 将博客部署到GitHub上
+- 配置博客
+- 发表博客
+- 更多
+
+
+####参考
+- [http://blog.devtang.com/blog/2012/02/10/setup-blog-based-on-github/](http://blog.devtang.com/blog/2012/02/10/setup-blog-based-on-github/)
+- [http://blog.csdn.net/jackystudio/article/details/16117585](http://blog.csdn.net/jackystudio/article/details/16117585)
+
+
+
+####主题
+
+<p>这是我使用的主题:</p>
+
+<pre><code>
+$ git clone git@github.com:shashankmehta/greyshade.git .themes/greyshade
+$ echo "\$greyshade: color;" >> sass/custom/_colors.scss //Substitue 'color' with your highlight color
+$ rake "install[greyshade]"
+$ rake generate
+
+</code></pre>
+
+使用完以后别忘记generate/deploy
+
+####新浪微博
+发现 sina weibo 的添加不只是更改_config.yml
+
+- 首先在_config.yml 加上
+<pre><code>
+weibo_user: smallyin00
+</code></pre>
+- 其次添加“weibo.png” 到 “octopress/source/images/social” 
+- 然后加代码到“octopress/sass/parts/_header.scss文件中
+<pre><code>
+&.weibo{
+  background: image-url('social/weibo.png') center no-repeat #e32529;
+  border: 1px solid #e32529;
+  &:hover{
+      border: 1px solid darken(#e32529, 10%);
+  }
+}
+</code></pre>
+
+
